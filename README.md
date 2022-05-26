@@ -1,6 +1,6 @@
 # cringe-chinese-anki-card-format
 
-I am not a frontend "developer" so please forgive me idk how to write html *~*
+I am not a frontend "developer" so please forgive me idk how to write html O_o
 
 I don't think theres any standard way to share your card templates other than sharing a whole deck, so you can just copy the code into your own card. 
 
