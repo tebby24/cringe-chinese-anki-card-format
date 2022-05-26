@@ -1,0 +1,308 @@
+CHINESE SENTENCE CARD TEMPLATE
+
+FIELDS:
+1: Target Word
+2: TW Pinyin
+3: reveal definition
+4: TW Audio
+5: Sentence
+6: Sentence Audio
+7: Image
+8: Notes
+
+#Notes: the reason I titled #3 'reveal definition' is because I used to hide the definitions behind a hint. When you use a hint in anki, the text shows as whatever the field is called, and when you click on that text it reveals the fields contents. There's no way to change the text in it's 'hidden' state so I named the field 'reveal definiton' because that's what I wanted my card to say. I've since removed the hints but didn't feel like changing the field name and forgot about it and I still don't care  B)
+
+
+
+CARD 1: sentence audio -> target word definition
+
+Front Template:
+-------------------------------------------------------
+<span class = sentenceaudio>{{Sentence Audio}}</span>
+<br>
+-------------------------------------------------------
+
+
+Back Template: 
+------------------------------------------------------
+{{FrontSide}}
+
+<hr id=answer>
+
+<span class = TW>
+       <a href='https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=0&wdqb={{Target word}}'>{{Target word}}</a></span>
+
+<div class = dict> 
+  <span class = pinyin>{{TW pinyin}}</span>
+  <span class = twaudio>{{TW Audio}}</span>
+</div>
+
+
+</br>
+<span class = definition>{{reveal definition}}</span>
+
+<span class=notes>{{Notes}}</span>
+<span class=image>{{Image}}</span>
+<span class = sentence>"{{Sentence}}"</span>
+<span class = english></span>
+-------------------------------------------------------
+# note: target word links to the mdgb page for that word
+
+
+Styling:
+-------------------------------------------------------
+.sentenceaudio {
+  font-size: 20px;
+}
+
+.card {
+  font-family: Arial;
+  text-align: center;
+  color: black;
+  background-color: #E3DAC9;
+}
+
+.card.nightMode {  
+  color: black;
+  font-family: Arial;
+  text-align: center;
+  background-color: #E3DAC9;
+}
+
+.sentence{
+  display: inline;
+  font-size: 15px;
+}
+
+.TW {
+  display: inline;
+  vertical-align:middle;
+  color: black;
+  font-size: 35px;
+  line-height: 1;
+  font-family: FZKai;
+  #background-color: #D2B48C;
+}
+
+.dict {
+  display: inline;
+}
+
+.pinyin {
+  display: inline;
+  vertical-align: middle;
+  color: black;
+  font-size: 20px;
+  line-height: 1;
+  color:  #707070;
+  font-family: Arial;
+  font-style: italic;
+}
+
+.twaudio {
+  display: inline;
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 15px;
+}
+
+.replay-button svg { 
+display:none; 
+}
+.replay-button:before { 
+content: '▶';
+}
+
+
+.definition {
+  display: block;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  color: black;
+}
+
+.hint {
+  display: block;
+  font-family: h;
+  #font-style: italic;
+  font-size: 13px;
+  padding: 1px;
+  text-align: center;
+  color: black;
+}
+
+.english {
+  font-size: 10px;
+  font-family: h;
+}
+
+.image {
+  display: block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.notes {
+  font-family: arial;
+  font-style: italic;
+  font-size: 8px;
+  color: black;
+}
+
+a{
+  color: black;
+}
+-------------------------------------------------------
+
+
+CARD 2: target word (hanzi) -> target word definition
+
+Front Template:
+-------------------------------------------------------
+<span class = TW>{{Target word}}</span>
+-------------------------------------------------------
+
+
+Back Template:
+-------------------------------------------------------
+<span class = TW>
+       <a href='https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=0&wdqb={{Target word}}'>{{Target word}}</a></span>
+
+<hr id=answer>
+
+<div class = dict>
+  <span class = pinyin>{{TW pinyin}}</span>
+  <div class = twaudio>{{TW Audio}}</div>
+</div>
+
+
+
+<div class = definition>{{reveal definition}}</div>
+</br>
+
+<span>{{Image}}</span>
+</br>
+
+
+<span class = sentence>"{{Sentence}}"</span>
+<span class = english></span>
+-------------------------------------------------------
+# note: target word links to the mdgb page for that word
+
+
+Styling:
+-------------------------------------------------------
+.sentenceaudio {
+  font-size: 20px;
+}
+
+
+.card {
+  font-family: Arial;
+  text-align: center;
+  color: black;
+  background-color: #E3DAC9;
+}
+
+.card.nightMode {  
+  color: black;
+  font-family: Arial;
+  text-align: center;
+  background-color: #E3DAC9;
+}
+
+.sentence{
+  display: inline;
+  font-size: 15px;
+}
+
+.TW {
+  display: inline;
+  vertical-align:middle;
+  color: black;
+  font-size: 35px;
+  line-height: 1;
+  font-family: FZKai;
+  #background-color: #D2B48C;
+}
+
+.dict {
+  display: inline;
+}
+
+.pinyin {
+  display: inline;
+  vertical-align: middle;
+  color: black;
+  font-size: 20px;
+  line-height: 1;
+  color:  #707070;
+  font-family: Arial;
+  font-style: italic;
+}
+
+.twaudio {
+  display: inline;
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 15px;
+}
+
+.replay-button svg { 
+display:none; 
+}
+.replay-button:before { 
+content: '▶';
+}
+
+
+.definition {
+  display: block;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  color: black;
+}
+
+.hint {
+  display: block;
+  font-family: h;
+  #font-style: italic;
+  font-size: 13px;
+  padding: 1px;
+  text-align: center;
+  color: black;
+}
+
+.english {
+  font-size: 10px;
+  font-family: h;
+}
+
+.image {
+  display: block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.notes {
+  font-family: arial;
+  font-style: italic;
+  font-size: 8px;
+  color: black;
+}
+
+a{
+  color: black;
+}
+-------------------------------------------------------
+
+
+
+
+
