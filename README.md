@@ -6,7 +6,7 @@ I don't think theres any standard way to share your card templates other than sh
 
 
 Here's basically what the cards do. 
-I use yomichan setup for chinese [check out this amazing guide](https://gist.github.com/shoui520/25460fd2e9fb194d3e5152fa2ce42ca2) to fill out every field except for picture and notes 
+I use yomichan setup for chinese ([check out this amazing guide](https://gist.github.com/shoui520/25460fd2e9fb194d3e5152fa2ce42ca2)) to fill out every field except for picture and notes 
 
 Card 1
 frontside:
